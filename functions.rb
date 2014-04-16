@@ -1,11 +1,8 @@
-gmu_bah_h7_ruby
-===============
+
 # Return a reversed copy of the array
 def reverse(an_array)
   an_array.reverse
 end
-
-reverse(an_array = [1, 2, 3, 4, 5])
 
 
 # Return a map of letters and counts of letters
@@ -42,10 +39,12 @@ def fizzbuzz
       i = "FizzBuzz"
     else
       return i
+    end
+  end
 end
 
 # Uncomment each of these to test your functions
-# puts reverse([3,6,'dog']).inspect
-# puts histogram('The Quick brown fox').inspect
-# puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
-# puts fizzbuzz.join("\n")
+puts reverse([3,6,'dog']).inspect
+puts histogram('The Quick brown fox').inspect
+puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
+puts fizzbuzz.join("\n")
