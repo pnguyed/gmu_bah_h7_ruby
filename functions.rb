@@ -18,8 +18,8 @@ end
 # (Hint: the is_a? method might be useful here)
 # 
 def sum_only_numbers(an_array)
-  if an_array.map {|x| (x.is_a? Integer)}
-    an_array.sum
+  number_array =  an_array.find_all {|x| (x.is_a? Integer)}
+    number_array.inject {|sum,x| sum+x }
 end
 
 # For i from 1 to 100, return an array.
