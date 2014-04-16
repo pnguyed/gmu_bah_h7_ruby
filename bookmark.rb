@@ -1,7 +1,7 @@
 class Bookmark
   attr_accessor :url, :title
-  LAST_VISITED = nil
-  def visit! (LAST_VISITED)
-    LAST_VISITED = Time.now.utc
+  last_visited = nil
+  def visit! (last_visited)
+    last_visited = Time.now.utc
   end
 end
